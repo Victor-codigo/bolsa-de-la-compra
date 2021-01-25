@@ -102,4 +102,24 @@
 
     // ---------------- PARAMETER HINT ---------------- \\
 
+
+    "workbench.colorCustomizations": {
+        "separators.classes.borderColor": "#555",  
+        "separators.constructors.borderColor": "#555",  
+        "separators.enums.borderColor": "#555",  
+        "separators.functions.borderColor": "#555",  
+        "separators.interfaces.borderColor": "#555",  
+        "separators.methods.borderColor": "#555",  
+        "separators.namespaces.borderColor": "#555",  
+      },
+
+      "separators.enabledSymbols": [ 
+        "Classes", 
+        "Constructors",
+        "Enums", 
+        "Functions",
+        "Interfaces", 
+        "Methods",
+      ],
+
 }
