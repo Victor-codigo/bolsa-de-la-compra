@@ -19,7 +19,3 @@
 /.php_cs
 /.php_cs.cache
 ###< friendsofphp/php-cs-fixer ###
-
-###> Bolsa de la compra ###
-/tools/
-###< Bolsa de la compra ###
