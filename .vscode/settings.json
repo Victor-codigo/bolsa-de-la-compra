@@ -1,0 +1,105 @@
+{
+    // ---------------- PHP ---------------- \\
+
+    //"php.validate.executablePath": "/usr/local/bin/php",
+    "php.validate.run": "onType",
+
+    // ---------------- PHP ---------------- \\
+
+    // ---------------- PHPUNIT ---------------- \\
+
+    "phpunit.args": [
+
+        "--coverage-clover", "coverage.xml",
+        "--configuration", "/var/www/html/bolsa-de-la-compra/phpunit.xml.dist"
+    ],
+    "phpunit.phpunit": "/var/www/html/bolsa-de-la-compra/bin/phpunit",
+    "phpunit.php": "/usr/local/bin/php",
+    "phpunit.files": "tests/**/*Test.php",
+    
+    // ---------------- PHPUNIT ---------------- \\
+
+    // ---------------- PHP CS FIXER ---------------- \\
+    
+    "php-cs-fixer.executablePath": "${workspaceFolder}/vendor/bin/php-cs-fixer",
+    "php-cs-fixer.onsave": true,
+    "php-cs-fixer.rules": "@PSR2",
+    "php-cs-fixer.config": ".php_cs;.php_cs.dist",
+    "php-cs-fixer.allowRisky": false,
+    "php-cs-fixer.pathMode": "override",
+    "php-cs-fixer.exclude": [],
+    "php-cs-fixer.autoFixByBracket": true,
+    "php-cs-fixer.autoFixBySemicolon": false,
+    "php-cs-fixer.formatHtml": true,
+    "php-cs-fixer.documentFormattingProvider": true,
+    
+    // ---------------- PHP CS FIXER ---------------- \\
+
+    // ---------------- PHPCS ---------------- \\
+
+    "phpcs.enable": true,
+    "phpcs.autoConfigSearch": true,
+    "phpcs.executablePath": "./vendor/bin/phpcs",
+    "phpcs.showWarnings": true,
+    "phpcs.showSources": true,
+    "phpcs.errorSeverity": 8,
+    "phpcs.warningSeverity": 8,
+    "phpcs.ignorePatterns": [
+        "**/.git/**",
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/storage/**",
+        "**/resources/views/**",
+        "**/migrations/**",
+        "**/vendor"
+    ],
+
+    // ---------------- PHPCS ---------------- \\
+
+    // ---------------- PHPSTAN ---------------- \\
+
+    "phpstan.enabled": true,
+    "phpstan.path": "/var/www/html/bolsa-de-la-compra/vendor/bin/phpstan",
+    "phpstan.level": "max",
+    "phpstan.memoryLimit": "2048M",
+    //"phpstan.projectFile": null,
+    "phpstan.excludeFiles": [],
+    "phpstan.options": [],
+    
+    // ---------------- PHPSTAN ---------------- \\
+
+    // ---------------- PHPMD ---------------- \\
+
+    "phpmd.command": "/var/www/html/bolsa-de-la-compra/vendor/bin/phpmd",
+
+    // ---------------- PHPMD ---------------- \\
+
+    // ---------------- COVERAGE GUTTERS ---------------- \\
+
+    "coverage-gutters.showLineCoverage": true,
+    "coverage-gutters.showRulerCoverage": true,
+    "coverage-gutters.coverageFileNames": [
+
+        "lcov.info",
+        "cov.xml",
+        "coverage.xml",
+        "jacoco.xml"
+    ],
+
+    // ---------------- COVERAGE GUTTERS ---------------- \\
+
+    // ---------------- NAMESPACE RESOLVER ---------------- \\
+
+    "namespaceResolver.sortAlphabetically": true,
+
+    // ---------------- NAMESPACE RESOLVER ---------------- \\
+
+    // ---------------- PARAMETER HINT ---------------- \\
+
+    "phpParameterHint.hintOnlyLiterals": true,
+    "phpParameterHint.hintTypeName": 1,
+    "phpParameterHint.onChange": true,    
+
+    // ---------------- PARAMETER HINT ---------------- \\
+
+}
